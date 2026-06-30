@@ -6,9 +6,7 @@ Sitio web informativo para el **Taller Frontend 2026**, desarrollado con React y
 
 Proyecto preparado para publicarse en GitHub Pages:
 
-```txt
-https://san-nico.github.io/G26-S1-tarea-9/
-```
+[https://san-nico.github.io/G26-S1-tarea-9/](https://san-nico.github.io/G26-S1-tarea-9/)
 
 ## Caracteristicas
 
