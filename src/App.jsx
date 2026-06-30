@@ -11,29 +11,24 @@ import Hero from "./secciones/HeroSeccion";
 import Pilares from "./secciones/PilaresSeccion";
 import Relatores from "./secciones/RelatoresSeccion";
 import Footer from "./secciones/FooterSeccion";
+import StackSeccion from "./secciones/StackSeccion";
 
 function App() {
   return (
     <>
-      <Navbar
-        logo={logo}
-        nav={contenido.header.nav}
-      />
-      <Hero
-        data={contenido.hero}
-        hero={hero}
-      />
+      <Navbar logo={logo} nav={contenido.header.nav} />
+      <Hero data={contenido.hero} hero={hero} />
       <Pilares
         titulo={contenido.pilares.title}
         cards={contenido.pilares.cards}
       />
+      <StackSeccion
+        title={contenido.stack.title}
+        cards={contenido.stack.cards}
+      />
       <Relatores
-        title={
-          contenido.relatores.title
-        }
-        cards={
-          contenido.relatores.cards
-        }
+        title={contenido.relatores.title}
+        cards={contenido.relatores.cards}
       />
       <Footer data={contenido.footer} />
     </>

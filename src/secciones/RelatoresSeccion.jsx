@@ -1,11 +1,13 @@
 import styled from "@emotion/styled";
 import RelatorCard from "./RelatoresCard";
 import { theme } from "../styles/theme";
+import { TituloSeccion } from "./TituloSeccion";
+import { bgPuntos } from "../styles/backgrounds";
 
 export default function Relatores({ title, cards = [] }) {
   return (
-    <Seccion>
-      <Titular>{title}</Titular>
+    <Seccion id="relatores">
+      <TituloSeccion>{title}</TituloSeccion>
 
       <Holder>
         {cards.map((card, index) => (
@@ -20,13 +22,8 @@ const Seccion = styled.section`
   display: flex;
   border-block: ${theme.border.seccion};
   flex-direction: column;
-  gap: 2rem;
-  padding: 3rem 1rem;
-  background: ${theme.background.primario};
 
-  /* Fondo pro */
-
-  color: #fff;
+  ${bgPuntos};
 `;
 
 const Titular = styled.h1`
@@ -34,7 +31,6 @@ const Titular = styled.h1`
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
-  letter-spacing: 0.5px;
 `;
 
 const Holder = styled.div`

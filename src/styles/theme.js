@@ -1,3 +1,5 @@
+import fondoPuntos from "../assets/fondo.png";
+
 export const theme = {
   colors: {
     fondo: "#0b0b1f",
@@ -8,15 +10,33 @@ export const theme = {
     enfasis: "#f00a",
     hero: "#1d0f26",
   },
+
   background: {
     secundario: "rgb(29, 26, 42)",
     primario: "rgb(29, 15, 38)",
+
+    // ✅ CORRECTO (CSS real)
+    puntos: `
+      background-image: url(${fondoPuntos});
+      background-repeat: repeat;
+      background-size: 20rem;
+      background-position: center;
+    `,
   },
 
   radius: {
     small: "0.5rem",
     medium: "1.25rem",
     big: "2rem",
+  },
+
+  font: {
+    h1: "1.8rem",
+    h2: "1.6rem",
+    h3: "1.4rem",
+    h4: "1.2rem",
+    p: "1rem",
+    mini: ".8rem",
   },
 
   border: {
@@ -33,6 +53,10 @@ export const theme = {
     tablet: "769px",
     laptop: "1025px",
     maximo: "min(100%, 80rem)",
+  },
+
+  padding: {
+    seccion: "3rem 0rem",
   },
 
   shadows: {

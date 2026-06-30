@@ -1,9 +1,16 @@
 import styled from "@emotion/styled";
 
-const Icono = styled.img`
+export default function Icono({ src, href }) {
+  return (
+    <Enlace href={href} target="_blank">
+      <Imagen src={src}></Imagen>
+    </Enlace>
+  );
+}
+const Enlace = styled.a``;
+
+const Imagen = styled.img`
   width: 2rem;
   height: 2rem;
   border-radius: 0.3rem;
 `;
-
-export default Icono;

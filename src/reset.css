@@ -1,11 +1,11 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: content-box;
-    color:inherit;
-    list-style-type: none;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  color: inherit;
+  list-style-position: inside;
+  text-decoration: none;
 }
-img{
-    display:block;
+img {
+  display: block;
 }

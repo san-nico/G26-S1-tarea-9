@@ -9,9 +9,7 @@
     "favicon": "staticfavicon.png",
     "css": "static/css/index.css",
     "js": "static/js/slider.js",
-    "fonts": [
-      "https://fonts.googleapis.com/css2?family=Raleway:wght@400"
-    ]
+    "fonts": ["https://fonts.googleapis.com/css2?family=Raleway:wght@400"]
   },
   "header": {
     "logo": "staticlogo.png",
@@ -19,15 +17,15 @@
     "nav": [
       {
         "label": "Información",
-        "href": "#informacion"
+        "href": "#pilares"
       },
       {
         "label": "Stack",
         "href": "#stack"
       },
       {
-        "label": "Inscríbete",
-        "href": "#inscripcion"
+        "label": "Relatores",
+        "href": "#relatores"
       }
     ]
   },
@@ -63,48 +61,42 @@
       {
         "title": "Horario Intensivo",
         "image": "pilares-2.png",
-        "text": [
-          "Sábados de 09:00 a 13:00",
-          "Clases presenciales y mentoría"
-        ]
+        "text": ["Sábados de 09:00 a 13:00", "Clases presenciales y mentoría"]
       },
       {
         "title": "Organizado por",
         "image": "pilares-3.png",
-        "text": [
-          "Asociación de informáticos",
-          "softwarelibrechile.cl"
-        ]
+        "text": ["Asociación de informáticos", "softwarelibrechile.cl"]
       }
     ]
   },
   "stack": {
     "id": "stack",
     "title": "Nuestro Stack Tecnológico",
-    "items": [
+    "cards": [
       {
         "name": "HTML",
-        "image": "staticicono-html.png",
+        "image": "icono-html.png",
         "description": "Base estructural de la web moderna"
       },
       {
         "name": "CSS",
-        "image": "staticicono-css.png",
+        "image": "icono-css.png",
         "description": "Diseño visual y responsivo"
       },
       {
         "name": "JavaScript",
-        "image": "staticicono-javascript.png",
+        "image": "icono-javascript.png",
         "description": "Interactividad y lógica en la web"
       },
       {
         "name": "React",
-        "image": "staticicono-react.png",
+        "image": "icono-react.png",
         "description": "Interfaces modulares y reutilizables"
       },
       {
         "name": "Next.js",
-        "image": "staticicono-next.png",
+        "image": "icono-next.png",
         "description": "Framework para apps modernas"
       }
     ],
@@ -181,11 +173,11 @@
         "contacto": [
           {
             "tipo": "correo",
-            "enlace": "david.hernandezm@usach.cl"
+            "enlace": "mailto:david.hernandezm@usach.cl"
           },
           {
             "tipo": "telefono",
-            "enlace": "+56998246832"
+            "enlace": "tel:+56998246832"
           },
           {
             "tipo": "linkedin",

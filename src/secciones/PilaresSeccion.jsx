@@ -1,62 +1,15 @@
-/** @jsxImportSource @emotion/react */
 import styled from "@emotion/styled";
 import CardPilares from "./PilaresCard";
 import fondo from "../assets/fondo.png";
+import { TituloSeccion } from "./TituloSeccion";
 
-const Contenedor = styled.section`
-  padding: 3rem 1.5rem;
+import { theme } from "../styles/theme";
+import { bgPuntos } from "../styles/backgrounds";
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-
-  background-image: url(${fondo});
-  background-repeat: repeat;
-  background-size: 20rem;
-`;
-
-const Titulo = styled.h1`
-  margin: 0;
-  font-size: 2rem;
-  color: #ffffff;
-  text-align: center;
-  letter-spacing: 0.5px;
-
-  span {
-    color: #00ff7b;
-  }
-`;
-
-const Holder = styled.div`
-  width: 100%;
-  max-width: 1100px;
-
-  display: grid;
-  gap: 1.5rem;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    );
-  }
-
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
-function Pilares({
-  titulo,
-  cards = [],
-}) {
+export default function Pilares({ titulo, cards = [] }) {
   return (
-    <Contenedor>
-      <Titulo>{titulo}</Titulo>
-
+    <Contenedor id="pilares">
+      <TituloSeccion>{titulo}</TituloSeccion>
       <Holder>
         {cards.map((card, index) => (
           <CardPilares
@@ -71,4 +24,29 @@ function Pilares({
   );
 }
 
-export default Pilares;
+const Contenedor = styled.section`
+  padding: ${theme.padding.seccion};
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ${bgPuntos};
+`;
+
+const Titulo = styled.h1`
+  color: #ffffff;
+
+  span {
+    color: #00ff7b;
+  }
+`;
+
+const Holder = styled.div`
+  width: ${theme.breakpoints.maximo};
+  justify-content: center;
+  display: grid;
+  gap: 1.5rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 20rem));
+`;
