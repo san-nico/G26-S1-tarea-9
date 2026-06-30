@@ -131,10 +131,6 @@ npm run build
 npm run deploy
 ```
 
-## Demo
-
-[G26-S1-tarea-9](https://san-nico.github.io/G26-S1-tarea-9)
-
 ## Autor
 
 Proyecto desarrollado como parte de la tarea 9 del grupo G26.
