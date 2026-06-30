@@ -1,294 +1,291 @@
 {
-    "lang": "es-CL",
-    "title": "Taller Frontend 2026",
-    "meta": {
-        "viewport": "width=device-width, initial-scale=1.0",
-        "referrer": "strict-origin-when-cross-origin"
+  "lang": "es-CL",
+  "title": "Taller Frontend 2026",
+  "meta": {
+    "viewport": "width=device-width, initial-scale=1.0",
+    "referrer": "strict-origin-when-cross-origin"
+  },
+  "assets": {
+    "favicon": "staticfavicon.png",
+    "css": "static/css/index.css",
+    "js": "static/js/slider.js",
+    "fonts": [
+      "https://fonts.googleapis.com/css2?family=Raleway:wght@400"
+    ]
+  },
+  "header": {
+    "logo": "staticlogo.png",
+    "logo_alt": "Logo del Taller Frontend 2026",
+    "nav": [
+      {
+        "label": "Información",
+        "href": "#informacion"
+      },
+      {
+        "label": "Stack",
+        "href": "#stack"
+      },
+      {
+        "label": "Inscríbete",
+        "href": "#inscripcion"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Taller Frontend",
+    "year": 2026,
+    "tags": [
+      "Único semestre",
+      "Iniciativa estudiantil",
+      "Para toda la comunidad"
+    ],
+    "highlight": "Taller 100% Gratuito",
+    "cta": {
+      "label": "¡Inscríbete ahora!",
+      "href": "#inscripcion"
     },
-    "assets": {
-        "favicon": "static/img/favicon.png",
-        "css": "static/css/index.css",
-        "js": "static/js/slider.js",
-        "fonts": [
-            "https://fonts.googleapis.com/css2?family=Raleway:wght@400"
-        ]
-    },
-    "header": {
-        "logo": "static/img/logo.png",
-        "logo_alt": "Logo del Taller Frontend 2026",
-        "nav": [
-            {
-                "label": "Información",
-                "href": "#informacion"
-            },
-            {
-                "label": "Stack",
-                "href": "#stack"
-            },
-            {
-                "label": "Inscríbete",
-                "href": "#inscripcion"
-            }
-        ]
-    },
-    "hero": {
-        "title": "Taller Frontend",
-        "year": 2026,
-        "tags": [
-            "Único semestre",
-            "Iniciativa estudiantil",
-            "Para toda la comunidad"
-        ],
-        "highlight": "Taller 100% Gratuito",
-        "cta": {
-            "label": "¡Inscríbete ahora!",
-            "href": "#inscripcion"
-        },
-        "image": {
-            "src": "hero.png",
-            "alt": "Imagen principal del taller"
-        }
-    },
-    "pilares": {
-        "title": "Lo que debes saber del curso",
-        "cards": [
-            {
-                "title": "Fechas clave",
-                "image": "/img/pilares-1.png",
-                "text": [
-                    "Inicio: 11 Abril / Fin: 11 Mayo",
-                    "USACH - DEPTO. Ingeniería Informática"
-                ]
-            },
-            {
-                "title": "Horario Intensivo",
-                "image": "/img/pilares-2.png",
-                "text": [
-                    "Sábados de 09:00 a 13:00",
-                    "Clases presenciales y mentoría"
-                ]
-            },
-            {
-                "title": "Organizado por",
-                "image": "/img/pilares-3.png",
-                "text": [
-                    "Asociación de informáticos",
-                    "softwarelibrechile.cl"
-                ]
-            }
-        ]
-    },
-    "stack": {
-        "id": "stack",
-        "title": "Nuestro Stack Tecnológico",
-        "items": [
-            {
-                "name": "HTML",
-                "image": "static/img/icono-html.png",
-                "description": "Base estructural de la web moderna"
-            },
-            {
-                "name": "CSS",
-                "image": "static/img/icono-css.png",
-                "description": "Diseño visual y responsivo"
-            },
-            {
-                "name": "JavaScript",
-                "image": "static/img/icono-javascript.png",
-                "description": "Interactividad y lógica en la web"
-            },
-            {
-                "name": "React",
-                "image": "static/img/icono-react.png",
-                "description": "Interfaces modulares y reutilizables"
-            },
-            {
-                "name": "Next.js",
-                "image": "static/img/icono-next.png",
-                "description": "Framework para apps modernas"
-            }
-        ],
-        "controls": {
-            "dots": 5,
-            "buttons": [
-                "prev",
-                "next"
-            ]
-        }
-    },
-    "form": {
-        "id": "inscripcion",
-        "title": "Inscríbete con nosotros",
-        "action": "/submit.php",
-        "method": "post",
-        "fields": [
-            {
-                "name": "nombre",
-                "label": "Nombre",
-                "type": "text",
-                "required": true
-            },
-            {
-                "name": "apellido",
-                "label": "Apellido",
-                "type": "text",
-                "required": true
-            },
-            {
-                "name": "rut",
-                "label": "RUT",
-                "type": "text",
-                "placeholder": "12.345.678-9",
-                "required": true
-            },
-            {
-                "name": "fecha_nacimiento",
-                "label": "Fecha de nacimiento",
-                "type": "date",
-                "required": true
-            },
-            {
-                "name": "casa_estudios",
-                "label": "Casa de estudios",
-                "type": "text"
-            },
-            {
-                "name": "carrera",
-                "label": "Carrera",
-                "type": "text"
-            },
-            {
-                "name": "telefono",
-                "label": "Teléfono",
-                "type": "tel",
-                "placeholder": "+56 9 1234 5678",
-                "pattern": "\\+56\\s9\\s\\d{4}\\s\\d{4}"
-            },
-            {
-                "name": "email",
-                "label": "Correo Electrónico",
-                "type": "email",
-                "required": true
-            }
-        ],
-        "submit_label": "Enviar inscripción",
-        "csrf": "{{CSRF_TOKEN}}"
-    },
-    "relatores": {
-        "title": "Relatores",
-        "cards": [
-            {
-                "name": "David Hernández",
-                "image": "/img/relator-david.jpg",
-                "role": "Director Asociación de Informáticos UTE-USACH. A.G. | Paleo Informático",
-                "contacto": [
-                    {
-                        "tipo": "correo",
-                        "enlace": "david.hernandezm@usach.cl"
-                    },
-                    {
-                        "tipo": "telefono",
-                        "enlace": "+56998246832"
-                    },
-                    {
-                        "tipo": "linkedin",
-                        "enlace": "https://www.linkedin.com/in/david-hern%C3%A1ndez-23205b3a"
-                    }
-                ],
-                "bio": [
-                    "Director Asociación de Informáticos UTE-USACH",
-                    "A.G. | Paleo Informático"
-                ]
-            },
-            {
-                "name": "Sebastian Becerra",
-                "image": "/img/relator-sebastian.jpg",
-                "role": "Líder Técnico en Operaciones | Transformación Digital | Liderazgo Ágil | Ecommerce B2B/B2C | Desarrollador Back-end en Banco Falabella",
-                "contacto": [
-                    {
-                        "tipo": "linkedin",
-                        "enlace": "https://www.linkedin.com/in/sebaebc/"
-                    }
-                ],
-                "bio": [
-                    "Líder Técnico en Operaciones",
-                    "Transformación Digital",
-                    "Liderazgo Ágil | Ecommerce B2B/B2C",
-                    "Desarrollador Back-end en Banco Falabella"
-                ]
-            },
-            {
-                "name": "Gonzalo Flemming",
-                "image": "/img/relator-gonzalo.jpg",
-                "role": "Tech Lead at Falabella | Transformación Digital | Financiero | Software Development Professor",
-                "contacto": [
-                    {
-                        "tipo": "linkedin",
-                        "enlace": "https://www.linkedin.com/in/gfleming-garrido/"
-                    }
-                ],
-                "bio": [
-                    "Tech Lead at Falabella",
-                    "Transformación Digital",
-                    "Financiero",
-                    "Software Development Professor"
-                ]
-            },
-            {
-                "name": "Scarlet Melgarejo",
-                "image": "/img/relator-scarlet.jpg",
-                "role": "KAM Ecommerce B2B-B2C | Diseño Web UX-UI | Líder Continuidad Operativa e Implementación",
-                "contacto": [
-                    {
-                        "tipo": "linkedin",
-                        "enlace": "https://www.linkedin.com/in/scarlett-melgarejo-venegas-38805626/"
-                    }
-                ],
-                "bio": [
-                    "KAM Ecommerce B2B-B2C",
-                    "Diseño Web UX-UI",
-                    "Líder en Continuidad Operativa e Implementación"
-                ]
-            },
-            {
-                "name": "Cristian Pavez",
-                "image": "/img/relator-cristian.jpg",
-                "role": "AI Engineer | Deep Learning & Generative AI | Software Engineer en Walmart Chile",
-                "contacto": [
-                    {
-                        "tipo": "linkedin",
-                        "enlace": "https://www.linkedin.com/in/cristian-pavez"
-                    }
-                ],
-                "bio": [
-                    "AI Engineer",
-                    "Deep Learning & Generative AI",
-                    "Software Engineer en Walmart Chile"
-                ]
-            },
-            {
-                "name": "Manuel Durán",
-                "image": "/img/relator-manuel.jpg",
-                "role": "Developer | Data Science & Web Technologies | Desarrollador de IU web en Globant",
-                "contacto": [
-                    {
-                        "tipo": "linkedin",
-                        "enlace": "https://www.linkedin.com/in/durbonca"
-                    }
-                ],
-                "bio": [
-                    "Developer",
-                    "Data Science & Web Technologies",
-                    "Desarrollador de IU web en Globant"
-                ]
-            }
-        ]
-    },
-    "footer": {
-        "copyright": "© 2022 - 2026 - Todos los derechos reservados.",
-        "privacy": {
-            "text": "Política de privacidad",
-            "url": "https://www.softwarelibrechile.cl"
-        }
+    "image": {
+      "src": "hero.png",
+      "alt": "Imagen principal del taller"
     }
+  },
+  "pilares": {
+    "title": "Lo que debes saber del curso",
+    "cards": [
+      {
+        "title": "Fechas clave",
+        "image": "pilares-1.png",
+        "text": [
+          "Inicio: 11 Abril / Fin: 11 Mayo",
+          "USACH - DEPTO. Ingeniería Informática"
+        ]
+      },
+      {
+        "title": "Horario Intensivo",
+        "image": "pilares-2.png",
+        "text": [
+          "Sábados de 09:00 a 13:00",
+          "Clases presenciales y mentoría"
+        ]
+      },
+      {
+        "title": "Organizado por",
+        "image": "pilares-3.png",
+        "text": [
+          "Asociación de informáticos",
+          "softwarelibrechile.cl"
+        ]
+      }
+    ]
+  },
+  "stack": {
+    "id": "stack",
+    "title": "Nuestro Stack Tecnológico",
+    "items": [
+      {
+        "name": "HTML",
+        "image": "staticicono-html.png",
+        "description": "Base estructural de la web moderna"
+      },
+      {
+        "name": "CSS",
+        "image": "staticicono-css.png",
+        "description": "Diseño visual y responsivo"
+      },
+      {
+        "name": "JavaScript",
+        "image": "staticicono-javascript.png",
+        "description": "Interactividad y lógica en la web"
+      },
+      {
+        "name": "React",
+        "image": "staticicono-react.png",
+        "description": "Interfaces modulares y reutilizables"
+      },
+      {
+        "name": "Next.js",
+        "image": "staticicono-next.png",
+        "description": "Framework para apps modernas"
+      }
+    ],
+    "controls": {
+      "dots": 5,
+      "buttons": ["prev", "next"]
+    }
+  },
+  "form": {
+    "id": "inscripcion",
+    "title": "Inscríbete con nosotros",
+    "action": "/submit.php",
+    "method": "post",
+    "fields": [
+      {
+        "name": "nombre",
+        "label": "Nombre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "apellido",
+        "label": "Apellido",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "rut",
+        "label": "RUT",
+        "type": "text",
+        "placeholder": "12.345.678-9",
+        "required": true
+      },
+      {
+        "name": "fecha_nacimiento",
+        "label": "Fecha de nacimiento",
+        "type": "date",
+        "required": true
+      },
+      {
+        "name": "casa_estudios",
+        "label": "Casa de estudios",
+        "type": "text"
+      },
+      {
+        "name": "carrera",
+        "label": "Carrera",
+        "type": "text"
+      },
+      {
+        "name": "telefono",
+        "label": "Teléfono",
+        "type": "tel",
+        "placeholder": "+56 9 1234 5678",
+        "pattern": "\\+56\\s9\\s\\d{4}\\s\\d{4}"
+      },
+      {
+        "name": "email",
+        "label": "Correo Electrónico",
+        "type": "email",
+        "required": true
+      }
+    ],
+    "submit_label": "Enviar inscripción",
+    "csrf": "{{CSRF_TOKEN}}"
+  },
+  "relatores": {
+    "title": "Relatores",
+    "cards": [
+      {
+        "name": "David Hernández",
+        "image": "relator-david.jpg",
+        "role": "Director Asociación de Informáticos UTE-USACH. A.G. | Paleo Informático",
+        "contacto": [
+          {
+            "tipo": "correo",
+            "enlace": "david.hernandezm@usach.cl"
+          },
+          {
+            "tipo": "telefono",
+            "enlace": "+56998246832"
+          },
+          {
+            "tipo": "linkedin",
+            "enlace": "https://www.linkedin.com/in/david-hern%C3%A1ndez-23205b3a"
+          }
+        ],
+        "bio": [
+          "Director Asociación de Informáticos UTE-USACH",
+          "A.G. | Paleo Informático"
+        ]
+      },
+      {
+        "name": "Sebastian Becerra",
+        "image": "relator-sebastian.jpg",
+        "role": "Líder Técnico en Operaciones | Transformación Digital | Liderazgo Ágil | Ecommerce B2B/B2C | Desarrollador Back-end en Banco Falabella",
+        "contacto": [
+          {
+            "tipo": "linkedin",
+            "enlace": "https://www.linkedin.com/in/sebaebc/"
+          }
+        ],
+        "bio": [
+          "Líder Técnico en Operaciones",
+          "Transformación Digital",
+          "Liderazgo Ágil | Ecommerce B2B/B2C",
+          "Desarrollador Back-end en Banco Falabella"
+        ]
+      },
+      {
+        "name": "Gonzalo Flemming",
+        "image": "relator-gonzalo.jpg",
+        "role": "Tech Lead at Falabella | Transformación Digital | Financiero | Software Development Professor",
+        "contacto": [
+          {
+            "tipo": "linkedin",
+            "enlace": "https://www.linkedin.com/in/gfleming-garrido/"
+          }
+        ],
+        "bio": [
+          "Tech Lead at Falabella",
+          "Transformación Digital",
+          "Financiero",
+          "Software Development Professor"
+        ]
+      },
+      {
+        "name": "Scarlet Melgarejo",
+        "image": "relator-scarlet.jpg",
+        "role": "KAM Ecommerce B2B-B2C | Diseño Web UX-UI | Líder Continuidad Operativa e Implementación",
+        "contacto": [
+          {
+            "tipo": "linkedin",
+            "enlace": "https://www.linkedin.com/in/scarlett-melgarejo-venegas-38805626/"
+          }
+        ],
+        "bio": [
+          "KAM Ecommerce B2B-B2C",
+          "Diseño Web UX-UI",
+          "Líder en Continuidad Operativa e Implementación"
+        ]
+      },
+      {
+        "name": "Cristian Pavez",
+        "image": "relator-cristian.jpg",
+        "role": "AI Engineer | Deep Learning & Generative AI | Software Engineer en Walmart Chile",
+        "contacto": [
+          {
+            "tipo": "linkedin",
+            "enlace": "https://www.linkedin.com/in/cristian-pavez"
+          }
+        ],
+        "bio": [
+          "AI Engineer",
+          "Deep Learning & Generative AI",
+          "Software Engineer en Walmart Chile"
+        ]
+      },
+      {
+        "name": "Manuel Durán",
+        "image": "relator-manuel.jpg",
+        "role": "Developer | Data Science & Web Technologies | Desarrollador de IU web en Globant",
+        "contacto": [
+          {
+            "tipo": "linkedin",
+            "enlace": "https://www.linkedin.com/in/durbonca"
+          }
+        ],
+        "bio": [
+          "Developer",
+          "Data Science & Web Technologies",
+          "Desarrollador de IU web en Globant"
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2022 - 2026 - Todos los derechos reservados.",
+    "privacy": {
+      "text": "Política de privacidad",
+      "url": "https://www.softwarelibrechile.cl"
+    }
+  }
 }
