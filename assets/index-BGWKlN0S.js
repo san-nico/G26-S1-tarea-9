@@ -111,22 +111,22 @@ Error generating stack: `+e.message+`
 `,ya=B.div`
   display: grid;
   gap: ${M.spacing(2)};
-`,ba=B.p``,xa=B.h2`
-  text-align: center;
-  margin-bottom: 2rem;
-`,Sa=`
+`,ba=B.p``,xa=`
   background-image: url(${Qn});
   background-repeat: repeat;
   background-size: 20rem;
   background-position: center;
-`;function Ca({titulo:e,cards:t=[]}){return(0,N.jsxs)(wa,{id:`pilares`,children:[(0,N.jsx)(xa,{children:e}),(0,N.jsx)(Ta,{children:t.map((e,t)=>(0,N.jsx)(ha,{title:e.title,image:e.image,text:e.text},t))})]})}var wa=B.section`
+`,Sa=B.h2`
+  text-align: center;
+  margin-bottom: 2rem;
+`;function Ca({titulo:e,cards:t=[]}){return(0,N.jsxs)(wa,{id:`pilares`,children:[(0,N.jsx)(Sa,{children:e}),(0,N.jsx)(Ta,{children:t.map((e,t)=>(0,N.jsx)(ha,{title:e.title,image:e.image,text:e.text},t))})]})}var wa=B.section`
   padding: ${M.padding.seccion};
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  ${Sa};
+  ${xa};
 `;B.h1`
   color: #ffffff;
 
@@ -193,12 +193,12 @@ Error generating stack: `+e.message+`
   grid-area: stats;
 
   align-content: center;
-`,Fa=B.li``;function Ia({title:e,cards:t=[]}){return(0,N.jsxs)(La,{id:`relatores`,children:[(0,N.jsx)(xa,{children:e}),(0,N.jsx)(Ra,{children:t.map((e,t)=>(0,N.jsx)(ka,{card:e},e.id??t))})]})}var La=B.section`
+`,Fa=B.li``;function Ia({title:e,cards:t=[]}){return(0,N.jsxs)(La,{id:`relatores`,children:[(0,N.jsx)(Sa,{children:e}),(0,N.jsx)(Ra,{children:t.map((e,t)=>(0,N.jsx)(ka,{card:e},e.id??t))})]})}var La=B.section`
   display: flex;
   border-block: ${M.border.seccion};
   flex-direction: column;
 
-  ${Sa};
+  ${xa};
 `;B.h1`
   text-align: center;
   font-size: 2rem;
@@ -258,7 +258,7 @@ Error generating stack: `+e.message+`
   align-self: center;
 `,qa=B.p`
   grid-area: descripcion;
-`;function Ja({title:e,cards:t}){let[n,r]=(0,_.useState)(0);return(0,_.useEffect)(()=>{let e=setInterval(()=>{r(e=>(e+1)%t.length)},2e3);return()=>clearInterval(e)},[t.length]),(0,N.jsxs)(Ya,{id:`stack`,children:[(0,N.jsx)(xa,{children:e}),(0,N.jsx)(Xa,{children:t.map((e,t)=>(0,N.jsx)(Za,{$active:t===n,children:(0,N.jsx)(Ua,{card:e})},t))}),(0,N.jsx)(Qa,{children:t.map((e,t)=>(0,N.jsx)($a,{$active:t===n},t))})]})}var Ya=B.section`
+`;function Ja({title:e,cards:t}){let[n,r]=(0,_.useState)(0);return(0,_.useEffect)(()=>{let e=setInterval(()=>{r(e=>(e+1)%t.length)},2e3);return()=>clearInterval(e)},[t.length]),(0,N.jsxs)(Ya,{id:`stack`,children:[(0,N.jsx)(Sa,{children:e}),(0,N.jsx)(Xa,{children:t.map((e,t)=>(0,N.jsx)(Za,{$active:t===n,children:(0,N.jsx)(Ua,{card:e})},t))}),(0,N.jsx)(Qa,{children:t.map((e,t)=>(0,N.jsx)($a,{$active:t===n},t))})]})}var Ya=B.section`
   background: ${M.background.primario};
   border-block: ${M.border.seccion};
 `,Xa=B.div`
