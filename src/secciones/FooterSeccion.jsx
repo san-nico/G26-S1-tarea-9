@@ -1,20 +1,12 @@
 import styled from "styled-components";
 import { theme } from "../styles/theme";
 
-export default function Footer({
-  data,
-}) {
+export default function Footer({ data }) {
   return (
     <Seccion>
-      <Copyright>
-        {data.copyright}
-      </Copyright>
+      <Copyright>{data.copyright}</Copyright>
 
-      <Enlace
-        href={data.privacy.url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Enlace href={data.privacy.url} target="_blank" rel="noopener noreferrer">
         {data.privacy.text}
       </Enlace>
     </Seccion>
@@ -26,8 +18,7 @@ const Seccion = styled.footer`
   gap: 0.5rem;
   justify-items: center;
   padding: 1rem;
-  background: ${theme.background
-    .secundario};
+  background: ${theme.background.secundario};
 `;
 
 const Copyright = styled.p``;

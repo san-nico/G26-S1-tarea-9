@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import CardPilares from "./PilaresCard";
 import fondo from "../assets/fondo.png";
-import { TituloSeccion } from "./TituloSeccion";
 
 import { theme } from "../styles/theme";
 import { bgPuntos } from "../styles/backgrounds";
+import { TituloSeccion } from "./TituloSeccion";
 
 export default function Pilares({ titulo, cards = [] }) {
   return (
