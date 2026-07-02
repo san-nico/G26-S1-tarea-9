@@ -2,9 +2,13 @@
 import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
 import { css } from "@emotion/react";
+import { PrimarioBg } from "../background/PrimarioBg";
+import Seccion from "../shared/Seccion";
+import { TituloCard } from "../ui/TituloCard";
 export default function Hero({ data, hero }) {
   return (
-    <Contenedor>
+    <Seccion>
+      <PrimarioBg />
       <Limitador>
         <Info>
           <Title>{data.title}</Title>
@@ -15,23 +19,17 @@ export default function Hero({ data, hero }) {
               <Tag key={i}>{tag}</Tag>
             ))}
           </Tags>
-          <Highlight>{data.highlight}</Highlight>
+          <TituloCard>{data.highlight}</TituloCard>
 
           <Cta href={data.cta.href}>{data.cta.label}</Cta>
         </Info>
 
         <Imagen src={hero} alt={data.image.alt} />
       </Limitador>
-    </Contenedor>
+    </Seccion>
   );
 }
 
-const Contenedor = styled.section`
-  display: grid;
-  padding: ${theme.padding.seccion};
-  background: ${theme.background.primario};
-  border-block: ${theme.border.seccion};
-`;
 const Limitador = styled.div`
   display: grid;
 

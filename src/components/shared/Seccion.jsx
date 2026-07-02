@@ -1,16 +1,13 @@
 import styled from "@emotion/styled";
-import { TituloSeccion } from "./TituloSeccion";
+import { TituloSeccion } from "../ui/TituloSeccion";
 import { theme } from "../../styles/theme";
 
-const Container = styled.section`
-  background: ${theme.background.primario};
-`;
-
-export default function Seccion({ id, titulo, children }) {
-  return (
-    <Container id={id}>
-      <TituloSeccion>{titulo}</TituloSeccion>
-      {children}
-    </Container>
-  );
+export default function Seccion({ id, children }) {
+  return <Container id={id}>{children}</Container>;
 }
+
+const Container = styled.section`
+  display: grid;
+  position: relative;
+  padding: 4rem 1rem;
+`;

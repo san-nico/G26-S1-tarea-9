@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
-import { TituloCard } from "../../secciones/TituloCard";
+import { TituloCard } from "../ui/TituloCard";
 import { ImgSmall } from "../img/SmallImg";
 
-export default function PilaresCard({ title, image, text = [] }) {
+export function PilarCard({ title, image, text = [] }) {
   return (
     <Contenedor>
       <TituloCard>{title}</TituloCard>

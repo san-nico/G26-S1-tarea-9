@@ -23,11 +23,11 @@ function App() {
         cards={contenido.pilares.cards}
       />
       <StackSeccion
-        title={contenido.stack.title}
+        titulo={contenido.stack.title}
         cards={contenido.stack.cards}
       />
       <Relatores
-        title={contenido.relatores.title}
+        titulo={contenido.relatores.title}
         cards={contenido.relatores.cards}
       />
       <Footer data={contenido.footer} />

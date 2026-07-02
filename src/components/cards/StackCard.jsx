@@ -15,6 +15,7 @@ export function StackCard({ name, image, description }) {
 
 const Card = styled.div`
   display: grid;
+  transform: scale(1.5);
   justify-self: center;
   grid-template-areas:
     "imagen titulo"

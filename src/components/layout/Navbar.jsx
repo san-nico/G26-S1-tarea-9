@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import { theme } from "../../styles/theme";
+import { SecundarioBg } from "../background/SecundarioBg";
 
 export default function Navbar(props) {
   return (
     <Seccion>
+      <SecundarioBg />
       <Contenedor>
         <Imagen src={props.logo} alt="logo" />
 
@@ -21,10 +23,11 @@ export default function Navbar(props) {
 
 const Seccion = styled.section`
   display: grid;
+  width: 100%;
+  position: relative;
+
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-
-  background: ${theme.background.secundario};
 `;
 const Contenedor = styled.div`
   display: grid;

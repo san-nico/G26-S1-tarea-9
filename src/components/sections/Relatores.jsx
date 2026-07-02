@@ -1,15 +1,17 @@
 import styled from "@emotion/styled";
-import RelatorCard from "../cards/RelatorCard";
+import { RelatorCard } from "../cards/RelatorCard";
 import { theme } from "../../styles/theme";
 
 import { bgPuntos } from "../../styles/backgrounds";
 import { TituloSeccion } from "../ui/TituloSeccion";
+import Seccion from "../shared/Seccion";
+import { TileBg } from "../background/TileBg";
 
-export default function Relatores({ title, cards = [] }) {
+export default function Relatores({ titulo, cards = [] }) {
   return (
     <Seccion id="relatores">
-      <TituloSeccion>{title}</TituloSeccion>
-
+      <TileBg />
+      <TituloSeccion>{titulo}</TituloSeccion>
       <Holder>
         {cards.map((card, index) => (
           <RelatorCard key={card.id ?? index} card={card} />
@@ -19,21 +21,6 @@ export default function Relatores({ title, cards = [] }) {
   );
 }
 
-const Seccion = styled.section`
-  display: flex;
-  border-block: ${theme.border.seccion};
-  flex-direction: column;
-
-  ${bgPuntos};
-`;
-
-const Titular = styled.h1`
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0;
-`;
-
 const Holder = styled.div`
   display: grid;
   width: ${theme.breakpoints.maximo};
@@ -41,7 +28,7 @@ const Holder = styled.div`
   margin: 0 auto;
   justify-content: center;
 
-  grid-template-columns: repeat(auto-fit, minmax(min-content, 25rem));
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 30rem));
   gap: 1.5rem;
   align-items: stretch;
 

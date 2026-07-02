@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 
-import { TituloCard } from "../../secciones/TituloCard";
+import { TituloCard } from "../ui/TituloCard";
 import { ImgFotografia } from "../img/FotografiaImg";
 import { ImgIcono } from "../img/IconoImg";
 
-export default function RelatorCard({ card }) {
+export function RelatorCard({ card }) {
   return (
     <Container>
       <ImgFotografia src={`img/${card.image}`} alt={card.name} />
@@ -19,7 +19,11 @@ export default function RelatorCard({ card }) {
 
       <Contactos>
         {card.contacto.map((item, index) => (
-          <ImgIcono src={`img/rrss_${item.tipo}.png`} href={item.enlace} />
+          <ImgIcono
+            key={`${item.tipo}-${index}`}
+            src={`img/rrss_${item.tipo}.png`}
+            href={item.enlace}
+          />
         ))}
       </Contactos>
     </Container>
@@ -65,10 +69,6 @@ const Contactos = styled.div`
 `;
 
 //hojas
-
-const Role = styled.p``;
-
-const Link = styled.a``;
 
 const Bio = styled.ul`
   display: grid;

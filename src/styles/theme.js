@@ -52,7 +52,7 @@ export const theme = {
     mobile: "426px",
     tablet: "769px",
     laptop: "1025px",
-    maximo: "min(100%, 80rem)",
+    maximo: "min(100%, 100rem)",
   },
 
   padding: {
