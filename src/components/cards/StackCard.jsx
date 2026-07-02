@@ -1,13 +1,14 @@
 /** @jsxImportSource @emotion/react */
 import styled from "@emotion/styled";
-import { theme } from "../styles/theme";
+import { theme } from "../../styles/theme";
+import { ImgCircular } from "../img/CircularImg";
 
-export default function StackCard({ card }) {
+export function StackCard({ name, image, description }) {
   return (
     <Card>
-      <Titulo>{card.name}</Titulo>
-      <Imagen src={`img/${card.image}`} />
-      <Descripcion>{card.description}</Descripcion>
+      <Titulo>{name}</Titulo>
+      <ImgCircular src={`img/${image}`} />
+      <Descripcion>{description}</Descripcion>
     </Card>
   );
 }
@@ -37,16 +38,6 @@ const Titulo = styled.h1`
   grid-area: titulo;
   align-self: end;
   color: ${theme.colors.primario};
-`;
-
-const Imagen = styled.img`
-  border-radius: 100%;
-  grid-area: imagen;
-
-  height: 8rem;
-  width: 8rem;
-  border: 4px white solid;
-  align-self: center;
 `;
 
 const Descripcion = styled.p`

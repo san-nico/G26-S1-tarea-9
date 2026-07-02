@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export default function Icono({ src, href }) {
+export function ImgIcono({ src, href }) {
   return (
     <Enlace href={href} target="_blank">
       <Imagen src={src}></Imagen>

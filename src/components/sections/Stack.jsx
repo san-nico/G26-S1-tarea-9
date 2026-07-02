@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
 import styled from "@emotion/styled";
-import { TituloSeccion } from "./TituloSeccion";
-import StackCard from "./StackCard";
-import { theme } from "../styles/theme";
+
+import { useEffect, useState } from "react";
+
+import { StackCard } from "../cards/StackCard";
+import { theme } from "../../styles/theme";
+import { TituloSeccion } from "../ui/TituloSeccion";
 
 export default function StackSeccion({ title, cards }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -22,7 +24,11 @@ export default function StackSeccion({ title, cards }) {
       <Holder>
         {cards.map((item, i) => (
           <CardWrapper key={i} $active={i === activeIndex}>
-            <StackCard card={item} />
+            <StackCard
+              name={item.name}
+              image={item.image}
+              description={item.description}
+            />
           </CardWrapper>
         ))}
       </Holder>

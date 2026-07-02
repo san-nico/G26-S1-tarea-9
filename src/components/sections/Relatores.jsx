@@ -1,8 +1,9 @@
 import styled from "@emotion/styled";
-import RelatorCard from "./RelatoresCard";
-import { theme } from "../styles/theme";
-import { TituloSeccion } from "./TituloSeccion";
-import { bgPuntos } from "../styles/backgrounds";
+import RelatorCard from "../cards/RelatorCard";
+import { theme } from "../../styles/theme";
+
+import { bgPuntos } from "../../styles/backgrounds";
+import { TituloSeccion } from "../ui/TituloSeccion";
 
 export default function Relatores({ title, cards = [] }) {
   return (

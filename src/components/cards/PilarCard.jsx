@@ -1,11 +1,13 @@
 import styled from "@emotion/styled";
-import { theme } from "../styles/theme";
+import { theme } from "../../styles/theme";
+import { TituloCard } from "../../secciones/TituloCard";
+import { ImgSmall } from "../img/SmallImg";
 
 export default function PilaresCard({ title, image, text = [] }) {
   return (
     <Contenedor>
-      <Titulo>{title}</Titulo>
-      <Icono src={`img/${image}`} alt={title} />
+      <TituloCard>{title}</TituloCard>
+      <ImgSmall src={`img/${image}`} alt={title} />
 
       <Textos>
         {text.map((linea, index) => (
@@ -25,14 +27,6 @@ const Contenedor = styled.article`
   background: ${theme.background.primario};
 `;
 //HOJAS
-const Titulo = styled.h3`
-  color: ${theme.colors.primario};
-  white-space: nowrap;
-`;
-
-const Icono = styled.img`
-  width: 4rem;
-`;
 
 const Textos = styled.div`
   display: grid;

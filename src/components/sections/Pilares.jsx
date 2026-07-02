@@ -1,14 +1,15 @@
 import styled from "@emotion/styled";
-import CardPilares from "./PilaresCard";
+import CardPilares from "../cards/PilarCard";
 import fondo from "../assets/fondo.png";
 
-import { theme } from "../styles/theme";
-import { bgPuntos } from "../styles/backgrounds";
-import { TituloSeccion } from "./TituloSeccion";
+import { theme } from "../../styles/theme";
+import { bgPuntos } from "../../styles/backgrounds";
+import { TituloSeccion } from "../../secciones/TituloSeccion";
+import Seccion from "../shared/Seccion";
 
 export default function Pilares({ titulo, cards = [] }) {
   return (
-    <Contenedor id="pilares">
+    <Seccion id="pilares">
       <TituloSeccion>{titulo}</TituloSeccion>
       <Holder>
         {cards.map((card, index) => (
@@ -20,19 +21,9 @@ export default function Pilares({ titulo, cards = [] }) {
           />
         ))}
       </Holder>
-    </Contenedor>
+    </Seccion>
   );
 }
-
-const Contenedor = styled.section`
-  padding: ${theme.padding.seccion};
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  ${bgPuntos};
-`;
 
 const Titulo = styled.h1`
   color: #ffffff;

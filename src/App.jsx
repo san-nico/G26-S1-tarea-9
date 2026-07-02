@@ -6,12 +6,12 @@ import hero from "./assets/hero.png";
 
 import contenido from "./data/contenido.json";
 
-import Navbar from "./secciones/NavbarSeccion";
-import Hero from "./secciones/HeroSeccion";
-import Pilares from "./secciones/PilaresSeccion";
-import Relatores from "./secciones/RelatoresSeccion";
-import Footer from "./secciones/FooterSeccion";
-import StackSeccion from "./secciones/StackSeccion";
+import Navbar from "./components/layout/Navbar";
+import Hero from "./components/sections/Hero";
+import Pilares from "./components/sections/Pilares";
+import Relatores from "./components/sections/Relatores";
+import Footer from "./components/layout/Footer";
+import StackSeccion from "./components/sections/Stack";
 
 function App() {
   return (

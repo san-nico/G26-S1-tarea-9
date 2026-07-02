@@ -1,12 +1,15 @@
 import styled from "@emotion/styled";
-import Icono from "./Icono";
+
+import { TituloCard } from "../../secciones/TituloCard";
+import { ImgFotografia } from "../img/FotografiaImg";
+import { ImgIcono } from "../img/IconoImg";
 
 export default function RelatorCard({ card }) {
   return (
     <Container>
-      <Foto src={`img/${card.image}`} alt={card.name} />
+      <ImgFotografia src={`img/${card.image}`} alt={card.name} />
 
-      <Nombre>{card.name}</Nombre>
+      <TituloCard>{card.name}</TituloCard>
 
       <Bio>
         {card.bio.map((item, index) => (
@@ -16,7 +19,7 @@ export default function RelatorCard({ card }) {
 
       <Contactos>
         {card.contacto.map((item, index) => (
-          <Icono src={`img/rrss_${item.tipo}.png`} href={item.enlace} />
+          <ImgIcono src={`img/rrss_${item.tipo}.png`} href={item.enlace} />
         ))}
       </Contactos>
     </Container>
@@ -62,18 +65,6 @@ const Contactos = styled.div`
 `;
 
 //hojas
-const Foto = styled.img`
-  height: 16rem;
-  width: 12rem;
-  object-fit: cover;
-  border-radius: 1rem;
-  grid-area: imagen;
-`;
-
-const Nombre = styled.h3`
-  grid-area: nombre;
-  justify-self: start;
-`;
 
 const Role = styled.p``;
 

@@ -1,13 +1,14 @@
 import styled from "@emotion/styled";
 import { TituloSeccion } from "./TituloSeccion";
+import { theme } from "../../styles/theme";
 
 const Container = styled.section`
-  background: red;
+  background: ${theme.background.primario};
 `;
 
-export default function Seccion({ titulo, children }) {
+export default function Seccion({ id, titulo, children }) {
   return (
-    <Container>
+    <Container id={id}>
       <TituloSeccion>{titulo}</TituloSeccion>
       {children}
     </Container>
